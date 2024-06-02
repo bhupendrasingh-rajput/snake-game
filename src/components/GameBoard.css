@@ -1,0 +1,60 @@
+/* GameBoard*/
+.gameboard {
+  display: grid;
+  place-items: center;
+}
+
+/* Container for the game grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 3rem);
+  grid-template-rows: repeat(10, 3rem);
+  width: max-content;
+  height: max-content;
+  background-color: #000000;
+  margin-bottom: 5vh;
+}
+
+/* Each cell in the grid */
+.cell {
+  width: 3rem;
+  height: 3rem;
+  border: 0.5px solid gray;
+}
+
+/* Player dot (green) */
+.player {
+  background-color: yellowgreen;
+}
+
+/* Snake segments (red) */
+.snake {
+  background-color: red;
+}
+
+/* Diamond dot (blue) */
+.diamond {
+  background-color: blue;
+}
+
+/* Score display */
+.score {
+  margin: 5vh 0;
+  text-align: center;
+}
+
+/* Start/Stop button */
+button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #ccc;
+}
